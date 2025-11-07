@@ -1,12 +1,18 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+// import { Inter } from "next/font/google"
 import Script from "next/script"
 import Plasma from "@/components/plasma"
 import { Toaster } from "@/components/ui/sonner"
+import { Space_Grotesk } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
+
+// const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
   title: "Healium Intelliscan - Ultrasound Imaging Platform",
@@ -19,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={spaceGrotesk.className}>
       <head>
         {/* Font Preload */}
         <link
@@ -72,7 +78,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
-        <div className="fixed inset-0 z-0 bg-black">
+        {/* <div className="fixed inset-0 z-0 bg-black">
           <Plasma
             color="#314EB9"
             speed={0.8}
@@ -81,9 +87,9 @@ export default function RootLayout({
             opacity={0.4}
             mouseInteractive={true}
           />
-        </div>
+        </div> */}
         <div className="relative z-10">{children}</div>
-          <Toaster className="z-50 bg-white"/>
+        <Toaster className="z-50 bg-white"/>
       </body>
     </html>
   )

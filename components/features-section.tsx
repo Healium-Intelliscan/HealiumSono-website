@@ -1,61 +1,70 @@
-import { Card } from "./ui/card"
+"use client"
+
+import { Zap, PiggyBank, CloudCog, Clock } from "lucide-react"
 
 export function FeaturesSection() {
   const features = [
     {
       title: "Lightning Fast",
       desc: "From scan to report in minutes, not hours",
-      icon: "/features/lighting.svg",
+      icon: <Zap className="w-8 h-8 text-[#882C24]" />,
+      iconBgColor: "rgb(243, 204, 181)",
     },
     {
       title: "Massive Savings",
       desc: "Cut diagnostic costs by up to 70%",
-      icon: "/features/saving.svg",
+      icon: <PiggyBank className="w-8 h-8 text-[#882C24]" />,
+      iconBgColor: "rgb(243, 204, 181)",
     },
     {
       title: "Future-Ready",
       desc: "Advanced AI-powered cloud technology",
-      icon: "/features/future.svg",
+      icon: <CloudCog className="w-8 h-8 text-[#882C24]" />,
+      iconBgColor: "rgb(243, 204, 181)",
     },
     {
       title: "Always Available",
       desc: "24/7/365 expert coverage",
-      icon: "/features/always.svg",
-    },
-    {
-      title: "Unmatched Quality",
-      desc: "Board-certified radiologist network",
-      icon: "/features/unmatched.svg",
+      icon: <Clock className="w-8 h-8 text-[#882C24]" />,
+      iconBgColor: "rgb(243, 204, 181)",
     },
   ]
 
   return (
-    <section id="features" 
-    className="px-4 liquid-glass py-12"
-    >
-      <div className="max-w-7xl mx-auto space-y-10">
-        {/* Intro text */}
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg leading-relaxed tracking-wide">
-            Healium Sono delivers advanced remote ultrasound diagnostics across key specialties
-            including Cardiology and OB/GYN. Our platform helps hospitals improve efficiency, reduce
-            operational costs, and elevate patient outcomes. By connecting certified sonographers and
-            radiologists to patients in real time. We ensure every scan receives an expert, accurate,
-            and timely interpretation.
-          </p>
+    <section id="features" className="px-4 liquid-glass py-20">
+      <div className="max-w-6xl mx-auto space-y-20">
+        {/* Header */}
+        <div className="text-center opacity-100">
+          <h2 className="text-3xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-4">
+            Powerful Features for Smarter Diagnostics
+          </h2>
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <p className="text-xl leading-relaxed text-[rgb(35,31,32)]">
+              Designed for speed, accuracy, and reliability, Healium Sono delivers the tools
+              hospitals and clinicians need to work smarter and faster.
+            </p>
+          </div>
         </div>
 
-        {/* Features */}
-        <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
+        {/* Features grid */}
+        <div className="flex justify-center gap-8 max-w-5xl mx-auto">
           {features.map((f, i) => (
-            <Card
+            <div
               key={i}
-              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(30.333%-1rem)] text-center text-white rounded-xl shadow-md space-y-0 flex flex-col gap-2 items-center"
+              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] text-center text-white rounded-xl flex flex-col gap-2 items-center"
             >
-              <img src={f.icon} alt={f.title} className="w-12 h-12 mx-auto" />
-              <h3 className="font-semibold text-lg">{f.title}</h3>
-              <p className="">{f.desc}</p>
-            </Card>
+              <div className="relative flex items-center justify-center w-[76px] h-[76px]">
+                <div
+                  className="absolute inset-0 rounded-2xl blur-[5px]"
+                  style={{ backgroundColor: f.iconBgColor }}
+                />
+                <div className="relative flex items-center justify-center rounded-2xl w-[76px] h-[76px]">
+                  {f.icon}
+                </div>
+              </div>
+              <h3 className="text-[#2D2D2D] font-semibold text-lg mt-2">{f.title}</h3>
+              <p className="text-gray-700 text-base">{f.desc}</p>
+            </div>
           ))}
         </div>
       </div>

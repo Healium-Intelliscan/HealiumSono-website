@@ -246,3 +246,160 @@ a[href*="v0.dev"] *,
   pointer-events: none !important;
   opacity: 0 !important;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes scroll-wheel {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.6;
+  }
+}
+
+@keyframes arrow-bounce {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 1.5s ease-in-out infinite;
+}
+
+.animate-scroll-wheel {
+  animation: scroll-wheel 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-arrow-bounce {
+  animation: arrow-bounce 2s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Ultrasound probe animations */
+@keyframes probe-tilt {
+  0%, 100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes tilt-left {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes tilt-right {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes probe-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes arrow-rotate {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes arrow-rotate-delayed {
+  0%, 30% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+.animate-probe-tilt {
+  animation: probe-tilt 4s ease-in-out infinite;
+}
+
+.animate-tilt-left {
+  animation: tilt-left 3s ease-in-out infinite;
+}
+
+.animate-tilt-right {
+  animation: tilt-right 3s ease-in-out infinite;
+}
+
+.animate-probe-rotate {
+  animation: probe-rotate 6s linear infinite;
+}
+
+.animate-arrow-rotate {
+  animation: arrow-rotate 2s ease-in-out infinite;
+}
+
+.animate-arrow-rotate-delayed {
+  animation: arrow-rotate-delayed 4s ease-in-out infinite;
+}

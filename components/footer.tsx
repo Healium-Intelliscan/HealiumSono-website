@@ -11,7 +11,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-black border-t border-[#4981F8] text-gray-300 flex flex-col">
+    <footer className="bg-[white] flex flex-col">
       <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 p-6">
         {/* Left Section */}
         <div className="space-y-4 w-full md:w-auto">
@@ -32,7 +32,7 @@ export function Footer() {
           {/* Address */}
           <div className="flex items-center space-x-2 text-sm">
             <MapPin className="h-5 w-5 text-gray-400 mt-1 shrink-0" />
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-[rgb(35,31,32)]">
               8 The Green, Ste R,<br />
               Dover,<br />
               Delaware, 19901<br />
@@ -47,7 +47,7 @@ export function Footer() {
             <Link
               key={l.href}
               href={l.href}
-              className="hover:text-[#4981F8] transition-colors"
+              className="text-[rgb(35,31,32)] hover:text-[#4981F8] transition-colors"
             >
               {l.label}
             </Link>
@@ -59,7 +59,7 @@ export function Footer() {
 
       {/* Bottom Section */}
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4 py-6 text-sm">
-        <p className="text-center md:text-left">
+        <p className="text-center md:text-left text-[rgb(35,31,32)]">
           &copy; {new Date().getFullYear()} Healium Intelliscan. All rights reserved.
         </p>
         <div className="flex gap-4">
