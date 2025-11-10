@@ -27,9 +27,9 @@ export function AIDataSize() {
                 />
               </div>
               <div className="flex-1">
-                <h2 className="text-3xl font-semibold text-[#2D2D2D] mb-4">Trained on 100,000+ Cardiac & OBGyn Ultrasound Images</h2>
+                <h2 className="text-3xl font-semibold text-[#2D2D2D] mb-4">Trained on millions Cardiac & OBGyn Ultrasound Images</h2>
                 <p className="text-[rgb(35,31,32)] font-normal">
-                  Built from a dataset of over 100,000 de-identified ultrasound images, our AI models cover Obstetrics, Cardiology, and Gynecology. 
+                  Built from a dataset of millions de-identified ultrasound images, our AI models cover Obstetrics, Cardiology, and Gynecology. 
       They analyze key anatomical structures in real time, providing accurate biometric measurements and insights that help clinicians assess fetal growth, cardiac function, and organ health with greater speed and confidence.
                 </p>
               </div>
