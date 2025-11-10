@@ -11,7 +11,7 @@ export function Hero() {
             "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/6634b22c992b5cd915fdce36_Gradient%20Final.webp')",
         }}
       >
-        <div className="container mx-auto px-6 border lg:px-20 py-20 lg:py-16">
+        <div className="container mx-auto px-6 lg:px-20 py-20 lg:py-16">
           <div className="flex gap-0 items-center">
             {/* Left Content */}
             <div className="flex-1 space-y-8">
