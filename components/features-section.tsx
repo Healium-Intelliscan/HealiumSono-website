@@ -47,11 +47,11 @@ export function FeaturesSection() {
         </div>
 
         {/* Features grid */}
-        <div className="flex justify-center gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8 max-w-5xl mx-auto">
           {features.map((f, i) => (
             <div
               key={i}
-              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] text-center text-white rounded-xl flex flex-col gap-2 items-center"
+              className="bg-white rounded-lg p-8 shadow-3xl shadow-[#F2EFEE] border w-full text-center text-white rounded-xl flex flex-col gap-2 items-center"
             >
               <div className="relative flex items-center justify-center w-[76px] h-[76px]">
                 <div

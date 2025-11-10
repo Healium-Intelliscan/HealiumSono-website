@@ -19,6 +19,7 @@ import CareContinuum from "@/components/care-continum"
 import ClinicalValidation from "@/components/clinical-validation"
 import NewDeviceCompatability from "@/components/new-device-compatability"
 import AsSeenIn from "@/components/as-seen-in"
+import { AIDataSize } from "@/components/train_data"
 
 // ✅ Force static generation for low TTFB
 export const dynamic = "force-static"
@@ -96,6 +97,7 @@ export default function Page() {
         <HeroVideo/>
         <CareContinuum/>
         <NewFeaturesSection/>
+        <AIDataSize/>
         <ClinicalValidation/>
         <NewDeviceCompatability/>
         <AsSeenIn/>

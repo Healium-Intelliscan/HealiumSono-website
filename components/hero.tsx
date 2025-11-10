@@ -11,24 +11,24 @@ export function Hero() {
             "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/6634b22c992b5cd915fdce36_Gradient%20Final.webp')",
         }}
       >
-        <div className="container mx-auto px-20 py-20 lg:py-16">
+        <div className="container mx-auto px-6 border lg:px-20 py-20 lg:py-16">
           <div className="flex gap-0 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
-              <h1 className="text-5xl lg:text-5xl font-bold text-[#2D2D2D] leading-tight text-balance">
+            <div className="flex-1 space-y-8">
+              <h1 className="w-full text-3xl lg:text-5xl font-bold text-[#2D2D2D] leading-tight">
                 {/* A new standard for cardiac imaging — anywhere */}
                 AI-Powered Remote Ultrasound for Cardiology & OB/GYN
 
               </h1>
 
-              <p className="text-xl text-[#4D4D4D] leading-relaxed max-w-5xl">
+              <p className="text-2xl text-[#2D2D2D] font-medium leading-relaxed max-w-5xl">
                 {/* Every heart deserves timely, accurate care. Yet millions of patients are still waiting — for access, for
                 diagnosis, for answers. */}
                 Bringing real-time AI scanning support and expert remote diagnostics together — closing the gap in access and accuracy of care.
               </p>
 
-              <div className="flex flex-wrap gap-4">
-                <Button asChild className="bg-[#2D2D2D] text-white hover:bg-white hover:text-white hover:text-black cursor-pointer rounded-full px-8 py-6 text-lg">
+              <div className="flex flex-wrap flex-col md:flex-row gap-4">
+                <Button asChild className="bg-black text-white hover:bg-white hover:text-white hover:text-black cursor-pointer rounded-full px-8 py-8 md:py-6 text-xl">
                   <Link href='#contact'>
                     Try for free
                   </Link>
@@ -36,7 +36,7 @@ export function Hero() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-2 border-black text-[#2D2D2D] bg-transparent hover:bg-white hover:text-black hover:border-white cursor-pointer rounded-full px-8 py-6 text-lg"
+                  className="border-2 border-black text-[#2D2D2D] bg-transparent hover:bg-white hover:text-black hover:border-white cursor-pointer rounded-full px-8 p-8 md:py-6 text-xl"
                 >
                   <Link href='#contact'>
                     Book a demo
@@ -46,7 +46,7 @@ export function Hero() {
             </div>
 
             {/* Right Image */}
-            <div className="relative lg:ml-auto">
+            <div className="w-1/4 hidden relative md:flex md:ml-auto">
               <div className="relative">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YpzEHr9rxvg1WycQHRXUfBUvvSI6d8.png"

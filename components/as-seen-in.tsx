@@ -35,7 +35,7 @@ export default function AsSeenIn() {
   ]
 
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white px-4 py-20">
       <div className="container w-full max-w-5xl mx-auto">
         <div className="flex flex-col items-center gap-12">
             {/* Heading */}
@@ -52,11 +52,11 @@ export default function AsSeenIn() {
 
             {/* Logo Grid */}
             <div
-            className="flex gap-8 justify-items-center items-center w-full"
+            className="grid grid-cols-1 lg:grid-cols-5 gap-8 justify-items-center items-center w-full"
             
             >
             {logos.map((logo, index) => (
-                <div key={index} className="flex flex-col items-center justify-center gap-4">
+                <div key={index} className="bg-white rounded-lg p-8 shadow-3xl shadow-[#F2EFEE] border w-full flex flex-col items-center justify-center gap-4">
                 <Image
                     src={logo.src || "/placeholder.svg"}
                     alt={logo.label}

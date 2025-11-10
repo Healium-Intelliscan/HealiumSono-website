@@ -58,9 +58,9 @@ export function RequestDemoSection() {
 
   return (
     <section id="contact" className="bg-[#f9f8f7] py-20 px-6 md:px-10">
-      <div className="max-w-6xl mx-auto flex gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         {/* Left content */}
-        <div className="space-y-6 flex-1">
+        <div className="lg:col-span-2 space-y-6 flex-1">
           <button className="border border-[#C8B5E8] text-[#2D2D2D] px-4 py-2 rounded-full text-sm font-medium">
             Get Started Today
           </button>
@@ -104,7 +104,7 @@ export function RequestDemoSection() {
         </div>
 
         {/* Right form */}
-        <div className="w-2/5 bg-white rounded-lg p-8 shadow-xl shadow-[#F2EFEE]">
+        <div className="bg-white rounded-lg p-8 shadow-xl shadow-[#F2EFEE]">
           <h3 className="text-xl font-semibold mb-6 text-gray-900">
             Request a Demo
           </h3>

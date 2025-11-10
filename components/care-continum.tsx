@@ -34,17 +34,19 @@ export default function CareContinuum() {
 
   return (
     <section id="howitwork" className="py-20 bg-white">
-      <div className="mx-auto px-10 max-w-[1240px]">
-        <div className="">
-          <h2 className="text-center font-semibold leading-[1.44] tracking-[0] text-2xl text-[rgb(35,31,32)]">
+      <div className="mx-auto px-4 lg:px-10 max-w-[1240px]">
+        <div className="mb-10 text-center opacity-100">
+          <h2 className="text-4xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-4">
             How It Works
           </h2>
-          <p className="text-center mt-2 leading-[1.4] text-xl text-[rgb(35,31,32)]">
-            From AI-guided scanning to expert diagnosis in four seamless steps
-          </p>
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <p className="text-xl leading-relaxed text-[rgb(35,31,32)]">
+              From AI-guided scanning to expert diagnosis in four seamless steps
+            </p>
+          </div>
         </div>
 
-        <div className="mt-16 grid mx-auto grid-cols-2 gap-x-10 gap-y-10 max-w-4xl">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-4xl  mx-auto">
           {careCards.map((card) => {
             const Icon = card.icon
             return (

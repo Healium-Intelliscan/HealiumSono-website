@@ -10,7 +10,7 @@ export default function ClinicalValidation() {
         "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/688b670bf59b1147601f6d7a_2%20Desktop%20-%2011-p-2000.webp')",
     }}
     >
-      <div className="container mx-auto px-10 max-w-6xl">
+      <div className="container mx-auto px-4 lg:px-10 max-w-6xl">
         <div className="mb-10 text-center opacity-100">
           <h2 className="text-4xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-4">
             Healium Sono Advantage
@@ -22,7 +22,7 @@ export default function ClinicalValidation() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Published Evidence Card */}
           <div className="bg-white rounded-lg p-8 shadow-3xl shadow-[#F2EFEE]">
             <div className="flex items-center gap-2 mb-6 text-sm text-[rgb(84,75,72)]">

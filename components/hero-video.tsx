@@ -6,7 +6,7 @@ export default function HeroVideo() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div id="about" className="relative w-full h-[90vh] overflow-hidden">
+    <div id="about" className="relative w-full h-[30vh] md:h-[90vh] overflow-hidden">
       {!isPlaying ? (
         <div
           className="relative w-full h-full cursor-pointer"

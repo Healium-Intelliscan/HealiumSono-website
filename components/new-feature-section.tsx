@@ -1,5 +1,4 @@
 import { NewFeatureItem } from "./new-feature-item"
-import Image from "next/image"
 
 const features = [
   {
@@ -29,22 +28,24 @@ const features = [
   },
 ]
 
+{/* <div className="relative w-full max-w-[400px]">
+  <Image
+    src="https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/68ac7600ae053fd167cf7ce6_Game-crop.gif"
+    alt="HeartFocus Game Animation"
+    width={400}
+    height={400}
+    className="w-full h-auto"
+    unoptimized
+  />
+</div> */}
+
 export function NewFeaturesSection() {
   return (
     <section className="bg-[#f9f8f7] py-16 lg:py-20">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="grid lg:grid-cols-[400px_1fr] gap-12 lg:gap-16 items-start">
-          <div className="flex flex-col">
-            {/* <div className="relative w-full max-w-[400px]">
-              <Image
-                src="https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/68ac7600ae053fd167cf7ce6_Game-crop.gif"
-                alt="HeartFocus Game Animation"
-                width={400}
-                height={400}
-                className="w-full h-auto"
-                unoptimized
-              />
-            </div> */}
+      <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-[400px_1fr] gap-12 lg:gap-16 items-start">
+          
+          <div className="hidden md:flex flex-col">
             <div className="flex flex-col items-center gap-2">
               <svg width="200" height="200" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                 <g className="animate-tilt-left" style={{ transformOrigin: "200px 200px" }}>
@@ -97,10 +98,10 @@ export function NewFeaturesSection() {
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-[42px] font-semibold text-[#2D2D2D] leading-tight text-center lg:text-left">
                 Intelligent Scanning Assistance
-                <br />
+                {/* <br /> */}
                 for Every Operator
               </h2>
-              <p className="text-base lg:text-lg text-[#4A4A4A] text-center lg:text-left">
+              <p className="text-[#2D2D2D] text-xl leading-relaxed  text-center lg:text-left">
                 Our AI-powered guidance system helps sonographers capture diagnostic-quality images with confidence
               </p>
             </div>
