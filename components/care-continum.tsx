@@ -33,7 +33,7 @@ export default function CareContinuum() {
   ]
 
   return (
-    <section id="howitwork" className="py-20 bg-white">
+    <section id="howitwork" className="py-20 2xl:py-32 bg-white">
       <div className="mx-auto px-4 lg:px-10 max-w-[1240px]">
         <div className="mb-10 text-center opacity-100">
           <h2 className="text-4xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-4">
@@ -46,7 +46,7 @@ export default function CareContinuum() {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-4xl  mx-auto">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-5xl  mx-auto">
           {careCards.map((card) => {
             const Icon = card.icon
             return (

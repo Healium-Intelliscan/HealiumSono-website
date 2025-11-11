@@ -3,11 +3,11 @@ import { Check, CheckCheck, Cpu, ScanLine, Shield, UserCog, Users } from "lucide
 export default function NewDeviceCompatability() {
   return (
     <section 
-    className="py-24 bg-[#f9f8f7]"
+    className="py-20 2xl:py-32 bg-[#f9f8f7]"
 
     >
       <div className="container mx-auto px-4 lg:px-10 max-w-6xl">
-        <div className="mb-10 text-center opacity-100">
+        <div className="text-center opacity-100">
           <h2 className="text-4xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-4">
             Device Compatibility
           </h2>
@@ -18,7 +18,7 @@ export default function NewDeviceCompatability() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
           {/* Published Evidence Card */}
           <div className="bg-white rounded-lg p-8 shadow-3xl shadow-[#F2EFEE]">
             <div className="flex items-center gap-2 mb-6 text-sm text-[rgb(84,75,72)]">
@@ -151,7 +151,7 @@ export default function NewDeviceCompatability() {
           </div>
         </div>
 
-        <div className="text-center max-w-4xl mx-auto opacity-100">
+        <div className="text-center max-w-4xl mb-8 mx-auto opacity-100">
           <p className="text-2xl font-medium text-[rgb(35,31,32)]">
             Need help with device setup? Contact our support team
           </p>

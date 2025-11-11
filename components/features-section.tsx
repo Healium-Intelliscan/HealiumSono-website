@@ -31,7 +31,7 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section id="features" className="px-4 liquid-glass py-20">
+    <section id="features" className="px-8 liquid-glass py-20 2xl:py-32">
       <div className="max-w-6xl mx-auto space-y-20">
         {/* Header */}
         <div className="text-center opacity-100">
@@ -47,7 +47,7 @@ export function FeaturesSection() {
         </div>
 
         {/* Features grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8 w-full mx-auto">
           {features.map((f, i) => (
             <div
               key={i}

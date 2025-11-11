@@ -3,7 +3,7 @@ import { Check, CheckCheck, Cpu, Shield, Users } from "lucide-react"
 export default function ClinicalValidation() {
   return (
     <section 
-    className="py-24"
+    className="py-20 lg:py-20 2xl:py-32"
     style={
         {
         backgroundImage:
@@ -11,7 +11,7 @@ export default function ClinicalValidation() {
     }}
     >
       <div className="container mx-auto px-4 lg:px-10 max-w-6xl">
-        <div className="mb-10 text-center opacity-100">
+        <div className="text-center opacity-100">
           <h2 className="text-4xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-4">
             Healium Sono Advantage
           </h2>
@@ -22,7 +22,7 @@ export default function ClinicalValidation() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
           {/* Published Evidence Card */}
           <div className="bg-white rounded-lg p-8 shadow-3xl shadow-[#F2EFEE]">
             <div className="flex items-center gap-2 mb-6 text-sm text-[rgb(84,75,72)]">
@@ -114,7 +114,7 @@ export default function ClinicalValidation() {
           </div>
         </div>
 
-        <div className="text-center max-w-4xl mx-auto opacity-100">
+        <div className="text-center max-w-4xl mx-auto opacity-100 mb-8">
           <p className="text-2xl font-medium text-[rgb(35,31,32)]">
             Unlike solutions that offer only AI guidance or only remote interpretation, Healiumsono delivers both, ensuring consistent image quality and expert diagnostic accuracy.
           </p>

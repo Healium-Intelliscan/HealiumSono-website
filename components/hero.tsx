@@ -5,23 +5,23 @@ import Link from "next/link"
 export function Hero() {
   return (
       <section 
-      className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="h-screen relative flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
           backgroundImage:
             "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/6634b22c992b5cd915fdce36_Gradient%20Final.webp')",
         }}
       >
-        <div className="container mx-auto px-6 lg:px-20 py-20 lg:py-16">
+        <div className="container mx-auto max-w-6xl flex items-center justify-center px-6 lg:pl-20">
           <div className="flex gap-0 items-center">
             {/* Left Content */}
             <div className="flex-1 space-y-8">
-              <h1 className="w-full text-3xl lg:text-5xl font-bold text-[#2D2D2D] leading-tight">
+              <h1 className="w-full text-3xl lg:text-3xl font-bold lg:font-semibold text-[#2D2D2D] leading-tight">
                 {/* A new standard for cardiac imaging — anywhere */}
                 AI-Powered Remote Ultrasound for Cardiology & OB/GYN
 
               </h1>
 
-              <p className="text-2xl text-[#2D2D2D] font-medium leading-relaxed max-w-5xl">
+              <p className="text-2xl text-[#2D2D2D] font-medium lg:font-normal leading-relaxed">
                 {/* Every heart deserves timely, accurate care. Yet millions of patients are still waiting — for access, for
                 diagnosis, for answers. */}
                 Bringing real-time AI scanning support and expert remote diagnostics together — closing the gap in access and accuracy of care.
@@ -46,12 +46,13 @@ export function Hero() {
             </div>
 
             {/* Right Image */}
-            <div className="w-1/4 hidden relative md:flex md:ml-auto">
+            <div className="w-2/5 hidden relative md:flex justify-end md:ml-auto">
               <div className="relative">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YpzEHr9rxvg1WycQHRXUfBUvvSI6d8.png"
+                  src="/hero/hero1.png"
+                  // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YpzEHr9rxvg1WycQHRXUfBUvvSI6d8.png"
                   alt="HeartFocus medical devices showing cardiac imaging"
-                  width={500}
+                  width={400}
                   height={500}
                   className="h-auto"
                   priority

@@ -57,7 +57,7 @@ export function RequestDemoSection() {
   }
 
   return (
-    <section id="contact" className="bg-[#f9f8f7] py-20 px-6 md:px-10">
+    <section id="contact" className="bg-[#f9f8f7] py-20 2xl:py-32 px-8 md:px-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         {/* Left content */}
         <div className="lg:col-span-2 space-y-6 flex-1">

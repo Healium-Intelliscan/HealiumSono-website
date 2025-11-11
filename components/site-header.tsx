@@ -53,22 +53,22 @@ export function SiteHeader() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="flex items-center gap-1 text-[#2D2D2D] hover:text-[#F4A582] transition-colors">
+            <Link href="/" className="2xl:text-lg text-[#2D2D2D] font-medium hover:text-[#F4A582] transition-colors">
               Home
             </Link>
-            <Link href="#about" className="flex items-center gap-1 text-[#2D2D2D] hover:text-[#F4A582] transition-colors">
+            <Link href="#about" className="2xl:text-lg text-[#2D2D2D] font-medium hover:text-[#F4A582] transition-colors">
               About Us
             </Link>
-            <Link href="#howitwork" className="flex items-center gap-1 text-[#2D2D2D] hover:text-[#F4A582] transition-colors">
+            <Link href="#howitwork" className="2xl:text-lg text-[#2D2D2D] font-medium hover:text-[#F4A582] transition-colors">
               How it works
             </Link>
-            <Link href="#faqs" className="text-[#2D2D2D] hover:text-[#F4A582] transition-colors">
+            <Link href="#faqs" className="2xl:text-lg text-[#2D2D2D] font-medium hover:text-[#F4A582] transition-colors">
               FAQs
             </Link>
-            <Link href="#contact" className="text-[#2D2D2D] hover:text-[#F4A582] transition-colors">
+            <Link href="#contact" className="2xl:text-lg text-[#2D2D2D] font-medium hover:text-[#F4A582] transition-colors">
               Contact Us
             </Link>
-            <Link href="https://app.healiumsono.com" className="text-[#2D2D2D] hover:text-[#F4A582] transition-colors">
+            <Link href="https://app.healiumsono.com" className="2xl:text-lg text-[#2D2D2D] font-medium hover:text-[#F4A582] transition-colors">
               Login
             </Link>
           </nav>

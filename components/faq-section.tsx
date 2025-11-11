@@ -7,7 +7,7 @@ import {
 
 export function FAQSection() {
   return (
-    <section id="faqs" className="bg-[#f8f8fb] px-4 py-16">
+    <section id="faqs" className="bg-[#f8f8fb] px-4 py-20 2xl:py-32">
       <div className="max-w-2xl mx-auto space-y-8">
         <div className="text-center opacity-100">
           <h2 className="text-4xl font-semibold tracking-[0] leading-tight text-[rgb(35,31,32)] mb-2">

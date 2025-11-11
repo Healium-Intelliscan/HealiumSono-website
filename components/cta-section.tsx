@@ -13,13 +13,13 @@ export function CTASection() {
   return (
 
     <section 
-    className="py-12 w-full bg-cover bg-center bg-no-repeat"
+    className="py-20 2xl:py-32 w-full bg-cover bg-center bg-no-repeat"
     style={{
           backgroundImage:
             "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/68a3288cb609dcafe8d47147_Gradient%20Final%205%201.webp')",
         }}
     >
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <div className="p-8">
           <div className="p-0">
             <div className="flex flex-col md:flex-row gap-8 items-center justify-between">

@@ -9,7 +9,7 @@ export function CertificationsSection() {
       <div className="container mx-auto space-y-10">
         <h2 className="text-3xl font-semibold text-center text-white">Trust factors</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="text-center border py-4 shadow-0 border-[#687FE5]">
             <div className="w-16 h-16 rounded-lg mx-auto flex items-center justify-center">
               <img src='/compliance/award.svg'/>

@@ -35,8 +35,8 @@ export default function AsSeenIn() {
   ]
 
   return (
-    <section className="w-full bg-white px-4 py-20">
-      <div className="container w-full max-w-5xl mx-auto">
+    <section className="w-full bg-white px-8 py-20 2xl:py-32">
+      <div className="container w-full max-w-6xl mx-auto">
         <div className="flex flex-col items-center gap-12">
             {/* Heading */}
             <div className="text-center opacity-100">

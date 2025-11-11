@@ -11,7 +11,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-[white] flex flex-col">
+    <footer className="bg-[white] flex flex-col pt-10">
       <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 p-6">
         {/* Left Section */}
         <div className="space-y-4 w-full md:w-auto">

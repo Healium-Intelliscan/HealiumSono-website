@@ -385,11 +385,11 @@ a[href*="v0.dev"] *,
 }
 
 .animate-tilt-left {
-  animation: tilt-left 3s ease-in-out infinite;
+  animation: tilt-left 1s ease-in-out infinite;
 }
 
 .animate-tilt-right {
-  animation: tilt-right 3s ease-in-out infinite;
+  animation: tilt-right 1s ease-in-out infinite;
 }
 
 .animate-probe-rotate {

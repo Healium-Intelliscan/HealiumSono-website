@@ -41,7 +41,7 @@ const features = [
 
 export function NewFeaturesSection() {
   return (
-    <section className="bg-[#f9f8f7] py-16 lg:py-20">
+    <section className="bg-[#f9f8f7] py-16 lg:py-20 2xl:py-40">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-[400px_1fr] gap-12 lg:gap-16 items-start">
           
@@ -98,7 +98,7 @@ export function NewFeaturesSection() {
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-[42px] font-semibold text-[#2D2D2D] leading-tight text-center lg:text-left">
                 Intelligent Scanning Assistance
-                {/* <br /> */}
+                <br />
                 for Every Operator
               </h2>
               <p className="text-[#2D2D2D] text-xl leading-relaxed  text-center lg:text-left">
