@@ -49,7 +49,7 @@ export function Hero() {
             <div className="w-2/5 hidden relative md:flex justify-end md:ml-auto">
               <div className="relative">
                 <Image
-                  src="/hero/hero1.png"
+                  src="/hero/hero.png"
                   // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YpzEHr9rxvg1WycQHRXUfBUvvSI6d8.png"
                   alt="HeartFocus medical devices showing cardiac imaging"
                   width={400}
