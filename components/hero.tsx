@@ -5,7 +5,7 @@ import Link from "next/link"
 export function Hero() {
   return (
       <section 
-      className="h-screen relative flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="h-screen relative flex overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
           backgroundImage:
             "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/6634b22c992b5cd915fdce36_Gradient%20Final.webp')",

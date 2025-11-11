@@ -19,7 +19,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Check } from "lucide-react"
 
 const demoSchema = z.object({
-  fullName: z.string().min(2, "Full name is required"),
+  name: z.string().min(2, "Full name is required"),
   email: z.string().email("Enter a valid email"),
   message: z.string().min(5, "Message must be at least 5 characters"),
 })
@@ -31,7 +31,7 @@ export function RequestDemoSection() {
   const form = useForm<DemoFormValues>({
     resolver: zodResolver(demoSchema),
     defaultValues: {
-      fullName: "",
+      name: "",
       email: "",
       message: "",
     },
@@ -113,7 +113,7 @@ export function RequestDemoSection() {
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
               <FormField
                 control={form.control}
-                name="fullName"
+                name="name"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-[#2D2D2D]">Full Name *</FormLabel>
@@ -159,7 +159,7 @@ export function RequestDemoSection() {
                         rows={8}
                         placeholder="Tell us about your facility and needs..."
                         {...field}
-                        className="border-gray-300 focus-visible:ring-gray-400"
+                        className="text-[#2D2D2D] border-gray-300 focus-visible:ring-gray-400"
                       />
                     </FormControl>
                     <FormMessage />
