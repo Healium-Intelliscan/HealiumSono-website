@@ -5,7 +5,7 @@ import Link from "next/link"
 export function Hero() {
   return (
       <section 
-      className="h-screen relative flex overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="py-20 2xl:py-48 relative flex overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
           backgroundImage:
             "url('https://cdn.prod.website-files.com/6634a89a6fab56ada55e9d51/6634b22c992b5cd915fdce36_Gradient%20Final.webp')",
@@ -15,7 +15,7 @@ export function Hero() {
           <div className="flex gap-0 items-center">
             {/* Left Content */}
             <div className="flex-1 space-y-8">
-              <h1 className="w-full text-3xl lg:text-3xl font-bold lg:font-semibold text-[#2D2D2D] leading-tight">
+              <h1 className="w-full text-3xl lg:text-3xl 2xl:text-4xl font-bold lg:font-semibold text-[#2D2D2D] leading-tight">
                 {/* A new standard for cardiac imaging — anywhere */}
                 AI-Powered Remote Ultrasound for Cardiology & OB/GYN
 
