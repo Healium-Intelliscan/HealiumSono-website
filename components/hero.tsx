@@ -30,10 +30,10 @@ export function Hero() {
               <div className="flex flex-wrap flex-col md:flex-row gap-4">
                 <Button asChild className="bg-black text-white hover:bg-white hover:text-white hover:text-black cursor-pointer rounded-full px-8 py-8 md:py-6 text-xl">
                   <Link href='#contact'>
-                    Try for free
+                    Book a demo
                   </Link>
                 </Button>
-                <Button
+                {/* <Button
                   asChild
                   variant="outline"
                   className="border-2 border-black text-[#2D2D2D] bg-transparent hover:bg-white hover:text-black hover:border-white cursor-pointer rounded-full px-8 p-8 md:py-6 text-xl"
@@ -41,7 +41,7 @@ export function Hero() {
                   <Link href='#contact'>
                     Book a demo
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
 

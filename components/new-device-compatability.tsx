@@ -4,7 +4,6 @@ export default function NewDeviceCompatability() {
   return (
     <section 
     className="py-20 2xl:py-32 bg-[#f9f8f7]"
-
     >
       <div className="container mx-auto px-4 lg:px-10 max-w-6xl">
         <div className="text-center opacity-100">

@@ -9,17 +9,25 @@ export default function HeroVideo() {
     <div id="about" className="relative w-full h-[30vh] md:h-[90vh] overflow-hidden">
       <div
         className="relative w-full h-full cursor-pointer"
-        // onClick={() => setIsPlaying(true)}
       >
         <div className="absolute inset-0 w-full h-full">
-        <iframe
+        {/* <iframe
           className="w-full h-full"
           src="https://drive.google.com/file/d/1lzw7ixX56a6AM3scDkms5MHbg8TMVFSw/preview"
           title="video player"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        />
+        /> */}
+        <video
+  src="https://drive.google.com/uc?export=download&id=1lzw7ixX56a6AM3scDkms5MHbg8TMVFSw"
+  controls
+  autoPlay
+  muted
+  loop
+  className="w-full h-full object-cover"
+/>
+
       </div>
         {/* <iframe src="https://drive.google.com/file/d/1lzw7ixX56a6AM3scDkms5MHbg8TMVFSw/preview" width="640" height="480" allow="autoplay"></iframe> */}
         {/* <video

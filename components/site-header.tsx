@@ -45,15 +45,15 @@ export function SiteHeader() {
 
           {/* CTA Buttons (Desktop) */}
           <div className="hidden md:flex items-center gap-3">
-            <Button
+            {/* <Button
               variant="outline"
               asChild
               className="border-2 border-[#F4A582] text-[#2D2D2D] bg-transparent hover:bg-[#F4A582]/10 rounded-full px-6"
             >
               <Link href='#contact'>Book a demo</Link>
-            </Button>
+            </Button> */}
             <Button asChild className="bg-[#C8B5E8] text-[#2D2D2D] hover:bg-[#B8A5D8] rounded-full px-6">
-              <Link href='#contact'>Try for free</Link>
+              <Link href='#contact'>Book a demo</Link>
             </Button>
           </div>
 
@@ -89,14 +89,14 @@ export function SiteHeader() {
                     <span className="text-xl">Login</span>
                   </Link>
 
-                  <Button
+                  {/* <Button
                     asChild
                     onClick={() => setOpen(false)} // ✅ close on click
                     className="cursor-pointer rounded-full px-8 py-8 lg:py-6 text-xl"
                     style={{ borderRadius: "30px", boxSizing: "border-box" }}
                   >
                     <Link href='#contact'>Try for free</Link>
-                  </Button>
+                  </Button> */}
 
                   <Button
                     asChild
