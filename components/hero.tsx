@@ -43,6 +43,7 @@ export function Hero() {
                   </Link>
                 </Button> */}
               </div>
+              
             </div>
 
             {/* Right Image */}
