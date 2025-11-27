@@ -20,6 +20,7 @@ import ClinicalValidation from "@/components/clinical-validation"
 import NewDeviceCompatability from "@/components/new-device-compatability"
 import AsSeenIn from "@/components/as-seen-in"
 import { AIDataSize } from "@/components/train_data"
+import UltrasoundImageList from "@/components/ultrasound-image-list"
 
 // ✅ Force static generation for low TTFB
 export const dynamic = "force-static"
@@ -92,40 +93,16 @@ export default function Page() {
       <main className="text-white">
         <SiteHeader />
         <Hero />
-        {/* <iframe className="w-full h-[500px]" src="https://www.youtube.com/embed/8lCZWnk_9qU?si=f9LGQjAOnnxGSY_Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-        {/* <video autoPlay={true} className="w-full h-[500px]" src={'https://www.youtube.com/embed/8lCZWnk_9qU?si=f9LGQjAOnnxGSY_Q'}/> */}
         <HeroVideo/>
         <CareContinuum/>
         <NewFeaturesSection/>
         <AIDataSize/>
+        <UltrasoundImageList/>
         <ClinicalValidation/>
         <NewDeviceCompatability/>
         <AsSeenIn/>
         <FAQSection/>
         <FeaturesSection/>
-        {/* <div id="howitworks" className="bg-[#000000] py-12 mx-auto px-4 flex flex-col items-center justify-center">
-          <h2 className="text-3xl font-semibold text-center text-white">How it works</h2>
-          <VideoPlayer
-            desktopSrc="/videos/howitworks.mp4"
-            mobileSrc="/videos/howitworks_mobile.mp4"
-            className="bg-black container rounded-md"
-          />
-        </div> */}
-        {/* <AboutSection/> */}
-        
-        {/* <div className="mx-auto md:h-[500px] h-[400px] my-12">
-          <ResponsiveImage
-          desktop="/images/high_quality_image.png"
-          mobile="/images/high_quality_image_mobile.png"
-          alt=""
-          />
-        </div> */}
-        {/* <div className="max-w-4xl mx-auto my-12">
-          <h1 className="mb-8 text-2xl text-center font-bold text-white">Supreme Image Quality</h1>
-          <ImageCarousel images={sampleImages} />
-        </div> */}
-        {/* <DeviceCompatibilitySection/>
-        <CertificationsSection/> */}
         <CTASection/>
         <RequestDemoSection/>
         <Footer/>
